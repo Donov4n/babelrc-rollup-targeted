@@ -1,8 +1,8 @@
-import babelrc from 'babelrc-rollup';
+const babelrc = require('babelrc-rollup').default;
 
-export default function (options = {}) {
+module.exports = function (options = {}) {
     if (typeof options === 'string' || Array.isArray(options)) {
-        options = { target: options };
+        options = { targets: options };
     }
     const _options = Object.assign({}, options);
     
@@ -10,10 +10,10 @@ export default function (options = {}) {
     if (typeof targets === 'string') {
         targets = [targets];
     }
-    delete _options.target;
+    delete _options.targets;
     
     const _babelrc = babelrc(_options);
-    if (!target.length) {
+    if (!targets.length) {
         return _babelrc;
     }
     
@@ -42,4 +42,4 @@ export default function (options = {}) {
     });
     
     return _babelrc;
-}
+};
