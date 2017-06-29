@@ -1,11 +1,12 @@
 {
-    "name": "babelrc-targeted-rollup",
-    "version": "0.1.0",
-    "license": "MIT",
-    "author": "Donovan Lambert <d.lambert@cirize.com>",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:Donov4n/babelrc-targeted-rollup.git"
+    "name"        : "babelrc-targeted-rollup",
+    "description" : "Builds a babel configuration for rollup with specific targets from `babel-preset-env`",
+    "version"     : "0.1.0",
+    "license"     : "MIT",
+    "author"      : "Donovan Lambert <d.lambert@cirize.com>",
+    "repository"  : {
+        "type" : "git",
+        "url"  : "git@github.com:Donov4n/babelrc-targeted-rollup.git"
     },
     "files": [
         "index.js"

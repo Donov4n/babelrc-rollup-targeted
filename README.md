@@ -1,5 +1,7 @@
 # babelrc-targeted-rollup
 
+> Builds a babel configuration for rollup with specific targets from `babel-preset-env`.
+
 ## Installation
 
 ```bash
@@ -65,4 +67,4 @@ You can pass the same options as for [`babelrc-rollup`](https://github.com/event
 
 #### `targets` (default: `[]`)
 
-The `.babelrc` targets you want tu have inside the returned babel configuration.
+The `babel-preset-env` targets you want to have inside the returned babel configuration.
