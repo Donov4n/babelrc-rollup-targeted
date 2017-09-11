@@ -1,7 +1,7 @@
 {
     "name"        : "babelrc-targeted-rollup",
     "description" : "Builds a babel configuration for rollup with specific targets from `babel-preset-env`",
-    "version"     : "0.1.0",
+    "version"     : "0.1.2",
     "license"     : "MIT",
     "author"      : "Donovan Lambert <d.lambert@cirize.com>",
     "repository"  : "git@github.com:Donov4n/babelrc-targeted-rollup.git",
