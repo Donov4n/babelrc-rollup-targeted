@@ -53,8 +53,7 @@ const targets = [
     {
         output: {
             file   : 'dist/my-package.es.js',
-            format : 'es',
-            name   : 'MyPackage'
+            format : 'es'
         },
         plugins : [
             babel(babelrc('node'))
