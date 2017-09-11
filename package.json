@@ -4,9 +4,9 @@
     "version"     : "0.1.0",
     "license"     : "MIT",
     "author"      : "Donovan Lambert <d.lambert@cirize.com>",
-    "repository"  : {
-        "type" : "git",
-        "url"  : "git@github.com:Donov4n/babelrc-targeted-rollup.git"
+    "repository"  : "git@github.com:Donov4n/babelrc-targeted-rollup.git",
+    "scripts"     : {
+        "lint": "eslint --max-warnings 0 --ext .js ."
     },
     "files": [
         "index.js"
@@ -18,5 +18,10 @@
     ],
     "dependencies": {
         "babelrc-rollup": "^3.0.0"
+    },
+    "devDependencies": {
+        "eslint"                    : "^4.6.1",
+        "eslint-config-airbnb-base" : "^12.0.0",
+        "eslint-plugin-import"      : "^2.7.0"
     }
 }
