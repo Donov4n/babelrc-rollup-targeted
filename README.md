@@ -32,7 +32,7 @@ import babelrc from 'babelrc-targeted-rollup';
 import babel   from 'rollup-plugin-babel';
 
 const baseOptions = {
-    entry    : 'src/my-package.js',
+    input    : 'src/my-package.js',
     external : ['lodash'],
     globals  : {
         'lodash': '_'
@@ -41,16 +41,21 @@ const baseOptions = {
 
 const targets = [
     {
-        dest       : 'dist/my-package.js',
-        format     : 'umd',
-        moduleName : 'MyPackage',
-        plugins    : [
+        output: {
+            file   : 'dist/my-package.js',
+            format : 'umd',
+            name   : 'MyPackage'
+        },
+        plugins: [
             babel(babelrc('browsers'))
         ]
     },
     {
-        dest    : 'dist/my-package.es.js',
-        format  : 'es',
+        output: {
+            file   : 'dist/my-package.es.js',
+            format : 'es',
+            name   : 'MyPackage'
+        },
         plugins : [
             babel(babelrc('node'))
         ]
