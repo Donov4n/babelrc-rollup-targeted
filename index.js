@@ -6,7 +6,7 @@ module.exports = function (options = {}) {
     }
     const _options = Object.assign({}, options);
 
-    let targets = _options.targets;
+    let { targets } = _options;
     if (typeof targets === 'string') {
         targets = [targets];
     }
